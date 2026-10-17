@@ -1,0 +1,32 @@
+#explain each dependency in the requirements.txt file
+#1. fastapi>=0.115,<1: backend services. FastAPI is a modern, fast (high-performance) web framework for building APIs with Python 3.7+ based on standard Python type hints. It is used for creating web applications and APIs.
+#2. uvicorn[standard]>=0.30,<1: API server. Uvicorn is a lightning-fast ASGI server implementation, using uvloop and httptools. It is used to serve FastAPI applications. 
+#- what is ASGI server? ASGI (Asynchronous Server Gateway Interface) is a specification that allows for asynchronous communication between web servers and Python web applications. 
+#It enables handling multiple requests concurrently, making it suitable for high-performance web applications.
+#3. python-multipart>=0.0.9: dependency of FastAPI. This library is used for parsing multipart/form-data, which is commonly used for file uploads in web applications.
+#4. python-dotenv>=1,<2: This library allows you to read key-value pairs from a .env file and set them as environment variables. It is useful for managing configuration settings in a secure way.
+#5. pydantic-settings>=2,<3: centralized configuration for env variables. Pydantic is a data validation and settings management library that uses Python type annotations. It is used for defining and validating configuration settings in a structured way.
+#6. langgraph>=0.3,<2: orchestration framework of Agentic AI system. LangGraph is a library for building and managing language models and their interactions. It provides tools for creating and manipulating language graphs.
+#7. langchain-openai>=0.3,<2: openAI services via langchain. This library is part of the LangChain ecosystem and provides integration with OpenAI's language models. It allows developers to easily use OpenAI's APIs within their applications.
+#8. pinecone>=6,<9: Pinecone is a vector database that allows for efficient storage and retrieval of high-dimensional vector data. It is commonly used for applications involving machine learning and AI, such as similarity search and recommendation systems.
+#9. tavily-python>=0.5,<1: Tavily is a library that provides tools for building and managing conversational AI applications. It helps in creating chatbots and virtual assistants.
+#10. pymupdf>=1.24,<2: PyMuPDF is a Python binding for MuPDF, a lightweight PDF and XPS viewer. It allows for reading, writing, and manipulating PDF files in Python.
+#11. certifi>=2024: Certifi is a library that provides Mozilla's CA Bundle, which is used to verify the SSL certificates of HTTPS requests. It ensures secure communication over the internet.
+#12. openai>=1.75,<3: This library provides a Python client for interacting with OpenAI's API, allowing developers to access various AI models and services offered by OpenAI.
+#13. httpx>=0.27,<1: HTTPX is a fully featured HTTP client for Python that supports asynchronous requests, connection pooling, and HTTP/2. It is used for making HTTP requests to external APIs and services.
+#14. langgraph-checkpoint-sqlite==3.1.2: This specific version of the LangGraph checkpoint library provides functionality for saving and loading language model checkpoints using SQLite as the storage backend. It is used for persisting the state of language models during training or inference.
+
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.9
+python-dotenv>=1,<2
+pydantic-settings>=2,<3
+langgraph>=0.3,<2
+langchain-openai>=0.3,<2
+pinecone>=6,<9
+tavily-python>=0.5,<1
+pymupdf>=1.24,<2
+certifi>=2024
+openai>=1.75,<3
+httpx>=0.27,<1
+langgraph-checkpoint-sqlite==3.1.2
